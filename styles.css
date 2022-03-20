@@ -171,6 +171,10 @@ footer {
        width: 85px;
        height: 85px;
    }
+
+   #pjmb {
+       font-size: larger;
+   }
 }
 
 @media (max-width: 300px) and ( min-width: 150px) {
@@ -186,13 +190,12 @@ footer {
    }
 
    #br {
-    width: auto;
-    background: auto;
-    border: auto;
-    padding: 5px;
-    color: rgb(5, 5, 5);
-    margin: 5px;
-    font-size: auto;
+       font-size: x-small;
+       width: 70px;
+   }
+
+   #pjmb {
+       font-size: x-large;
    }
 
 }
