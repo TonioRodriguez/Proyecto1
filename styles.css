@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
     background-image: url(./Assests/Images/fondo\ header.jpg);
     background-size: cover;
@@ -81,10 +85,15 @@ main img {
     padding: 15px;
 }
 
-.adcnls p {
+.adcnls div {
     border: 5px solid rgba(248, 121, 121, 0.534);
-    border-radius: 15%;
-    font-size: larger;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 8px;
+    font-size: large;
+    width: 100%;
+    height: max-content;
+    overflow: auto;
 }
 
 p h1 {
