@@ -44,6 +44,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 main section {
@@ -56,9 +59,11 @@ main section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
     color: rgb(0, 68, 255);
     font-size: x-large;
     font-weight: bold;
+    width: 50%;
 }
 
 main img {
@@ -104,33 +109,257 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: rgb(97, 117, 182);
+    background-color: rgb(62, 121, 231);
+    justify-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    height: 200px;
 }
 
 .f1 h1 {
-    color: rgb(230, 98, 98);
-    font-size: larger;
+    color: rgb(228, 92, 92);
+    font-size: xx-large;
     font-weight: bold;
+    margin: 5px;
+    padding: 3px;
 }
 
 .f1 p {
-    color: rgb(230, 98, 98);
-    font-size: medium;
-    font-weight: normal;
+    color: rgb(228, 92, 92);
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 3px;
 }
 
 .f2 h1 {
-    color: rgb(230, 98, 98);
-    font-size: larger;
+    color: rgb(228, 92, 92);
+    font-size: xx-large;
     font-weight: bolder;
+    margin: 5px;
+    padding: 3px;
 }
 
 .f2 li {
-    color: rgb(230, 98, 98);
-    font-size: medium;
+    color: rgb(228, 92, 92);
+    font-size: xx-large;
     font-weight: bolder;
+    margin: 5px;
+    padding: 3px;
 }
-.form-regis {
-    width: 400px;
-    background-color: rgb(61, 99, 54);    
+
+@media (max-width: 800px) and (min-width: 600px) {
+     main {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    main img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) and ( min-width: 300px) {
+    main {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: repeat(6, 1fr);
+   }
+
+   main img {
+       width: 85px;
+       height: 85px;
+   }
+}
+
+@media (max-width: 300px) and ( min-width: 150px) {
+    main {
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+       grid-template-rows: repeat(6, 1fr);
+   }
+   
+   main img {
+       width: 65px;
+       height: 65px;
+   }
+
+   #br {
+    width: auto;
+    background: auto;
+    border: auto;
+    padding: 5px;
+    color: rgb(5, 5, 5);
+    margin: 5px;
+    font-size: auto;
+   }
+
+}
+
+
+@media (max-width: 1000px) and (min-width: 750px) {
+
+    .f1 h1 {
+        color: rgb(228, 92, 92);
+        font-size: x-large;
+        font-weight: bold;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f1 p {
+        color: rgb(228, 92, 92);
+        font-size: large;
+        font-weight: bolder;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 h1 {
+        color: rgb(228, 92, 92);
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 li {
+        color: rgb(228, 92, 92);
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 5px;
+        padding: 3px;
+    }
+
+}
+
+@media (max-width: 750px) and (min-width: 600px) {
+    
+    .f1 h1 {
+        color: rgb(228, 92, 92);
+        font-size: large;
+        font-weight: bold;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f1 p {
+        color: rgb(228, 92, 92);
+        font-size: large;
+        font-weight: bolder;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 h1 {
+        color: rgb(228, 92, 92);
+        font-size: large;
+        font-weight: bolder;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 li {
+        color: rgb(228, 92, 92);
+        font-size: large;
+        font-weight: bolder;
+        margin: 5px;
+        padding: 3px;
+    }
+
+}
+
+@media (max-width: 600px) and (min-width: 450px) {
+
+    footer {
+        width: 100%;
+        height: 400px;
+    }
+
+    footer div {
+        margin: 5px;
+        padding: 5px;
+}
+    
+    .f1 h1 {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f1 p {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 h1 {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 li {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+    }
+
+    footer div {
+        margin: 5px;
+        padding: 5px;
+}
+    
+    .f1 h1 {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f1 p {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 h1 {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .f2 li {
+        color: rgb(228, 92, 92);
+        font-size: medium;
+        font-weight: normal;
+        margin: 5px;
+        padding: 3px;
+    }
+
 }
